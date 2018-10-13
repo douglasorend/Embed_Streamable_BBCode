@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+<id>Dougiefresh:Streamable</id>
+<name>Embed Streamable Videos BBCode</name>
+<version>1.2</version>
+	
+<file name="$languagedir/index.spanish_latin.php" error="skip">
+	<operation>
+		<search position="end" />
+		<add><![CDATA[
+$txt['streamable_no_post_id'] = 'No se proporcion&oacute; la ID de publicaci&oacute;n de Streamable.com';
+$txt['streamable_default_width'] = 'Ancho predeterminado utilizado para Streamable.com bbcode cuando no se especifica<div class="smalltext">NOTA: Colocar <strong>0</strong> para usar una pantalla de video adaptativo</div>';
+$txt['streamable_default_height'] = 'Altura predeterminada utilizada para Streamable.com bbcode cuando no se especifica<div class="smalltext">NOTA: Colocar <strong>0</strong> para usar una pantalla de video adaptativo</div>';
+]]></add>
+	</operation>
+</file>
+
+<file name="$languagedir/index.spanish_latin-utf8.php" error="skip">
+	<operation>
+		<search position="end" />
+		<add><![CDATA[
+$txt['streamable_no_post_id'] = 'No se proporcionó la ID de publicación de Streamable.com';
+$txt['streamable_default_width'] = 'Ancho predeterminado utilizado para Streamable.com bbcode cuando no se especifica<div class="smalltext">NOTA: Colocar <strong>0</strong> para usar una pantalla de video adaptativo</div>';
+$txt['streamable_default_height'] = 'Altura predeterminada utilizada para Streamable.com bbcode cuando no se especifica<div class="smalltext">NOTA: Colocar <strong>0</strong> para usar una pantalla de video adaptativo</div>';
+]]></add>
+	</operation>
+</file>
+</modification>
