@@ -100,6 +100,8 @@ function BBCode_Streamable_Settings(&$config_vars)
 
 function BBCode_Streamable_Embed(&$message, &$smileys, &$cache_id, &$parse_tags)
 {
+	if ($message === false)
+		return;
 	$replace = (strpos($cache_id, 'sig') !== false ? '[url]$0[/url]' : '[streamable]$0[/streamable]');
 	$pattern = '~(?<=[\s>\.(;\'"]|^)(?:https?\:\/\/)?(?:www\.)?streamable.com\/(?:e\/)?([\w\d]+)+\??[/\w\-_\~%@\?;=#}\\\\]?~';
 	$message = preg_replace($pattern, $replace, $message);
