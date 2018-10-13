@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>Dougiefresh:Streamable</id>
+	<name>Embed Streamable Videos BBCode</name>
+	<type>modification</type>
+	<version>1.0</version>
+
+	<install for="2.0 - 2.0.99">
+		<readme parsebbc="true">readme.txt</readme>
+		<code>add_remove_hooks.php</code>
+		<modification>install.xml</modification>
+		<modification>language_english.xml</modification>
+		<require-file name="Subs-Streamable.php" destination="$sourcedir" />
+		<require-file name="BBCode-Streamable.css" destination="$themedir/css" />
+		<require-file name="streamable.gif" destination="$imagesdir/bbc" />
+	</install>
+	<uninstall for="2.0 - 2.0.99">
+		<code>add_remove_hooks.php</code>
+		<modification reverse="true">install.xml</modification>
+		<modification reverse="true">language_english.xml</modification>
+		<remove-file name="$sourcedir/Subs-Streamable.php" />		
+		<remove-file name="$themedir/css/BBCode-Streamable.css" />
+		<remove-file name="$imagesdir/bbc/streamable.gif" />
+	</uninstall>
+
+	<install for="2.1 Beta 2">
+		<readme parsebbc="true">readme.txt</readme>
+		<code>add_remove_hooks.php</code>
+		<modification>language_english.xml</modification>
+		<require-file name="Subs-Streamable.php" destination="$sourcedir" />
+		<require-file name="BBCode-Streamable.css" destination="$themedir/css" />
+		<require-file name="streamable.png" destination="$imagesdir/bbc" />
+	</install>
+	<uninstall for="2.1 Beta 2">
+		<code>add_remove_hooks.php</code>
+		<modification reverse="true">language_english.xml</modification>
+		<remove-file name="$sourcedir/Subs-Streamable.php" />		
+		<remove-file name="$themedir/css/BBCode-Streamable.css" />
+		<remove-file name="$imagesdir/bbc/streamable.png" />
+	</uninstall>
+</package-info>

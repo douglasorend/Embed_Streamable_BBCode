@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+<id>Dougiefresh:Streamable</id>
+<name>Embed Streamable Videos BBCode</name>
+<version>1.0</version>
+	
+<file name="$languagedir/index.english.php">
+	<operation>
+		<search position="end" />
+		<add><![CDATA[
+$txt['streamable_no_post_id'] = 'No Streamable.com post ID supplied.';
+$txt['streamable_default_width'] = 'Default width used for Streamable.com bbcode when not specified<div class="smalltext">Use <strong>0</strong> to use responsive video display</div>';
+$txt['streamable_default_height'] = 'Default height used for Streamable.com bbcode when not specified<div class="smalltext">Use <strong>0</strong> to use responsive video display</div>';
+]]></add>
+	</operation>
+</file>
+</modification>
