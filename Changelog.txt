@@ -1,3 +1,6 @@
+v1.2 - December 8th, 2017
+o Added URL embedding code for the Tapatalk mod.
+
 v1.1 - July 16th, 2017
 o Added ability for user to full-screen the video.
 

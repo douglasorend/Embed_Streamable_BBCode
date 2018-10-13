@@ -3,7 +3,7 @@
 <modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
 <id>Dougiefresh:Streamable</id>
 <name>Embed Streamable Videos BBCode</name>
-<version>1.1</version>
+<version>1.2</version>
 
 <file name="$sourcedir/Post.php">
 	<operation>
@@ -18,7 +18,26 @@
 <file name="$sourcedir/Subs.php">
 	<operation>
 		<search position="after"><![CDATA[// The non-breaking-space looks a bit different each time.]]></search>
-		<add><![CDATA[// Embed Vine URLs in the Vine bbcode tags:
+		<add><![CDATA[// Embed Streamable URLs in the Streamable bbcode tags:
+	BBCode_Streamable_Embed($message, $smileys, $cache_id, $parse_tags);
+
+	]]></add>
+	</operation>
+</file>
+<file name="$boarddir/mobiquo/include/Post.php" error="skip">
+	<operation>
+		<search position="replace"><![CDATA['<img>]]></search>
+		<add><![CDATA['<img><iframe>]]></add>
+	</operation>
+	<operation>
+		<search position="replace"><![CDATA['<img>]]></search>
+		<add><![CDATA['<img><iframe>]]></add>
+	</operation>
+</file>
+<file name="$boarddir/mobiquo/include/Subs.php" error="skip">
+	<operation>
+		<search position="after"><![CDATA[// The non-breaking-space looks a bit different each time.]]></search>
+		<add><![CDATA[// Embed Streamable URLs in the Streamable bbcode tags:
 	BBCode_Streamable_Embed($message, $smileys, $cache_id, $parse_tags);
 
 	]]></add>
