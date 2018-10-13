@@ -1,34 +1,38 @@
-[hr]
-[center][color=red][size=16pt][b]EMBED STREAMABLE VIDEO BBCODE v1.5[/b][/size][/color]
-[url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=4138]Link to Mod[/url]
-[/center]
-[hr]
+--------
 
-[color=blue][b][size=12pt][u]Introduction[/u][/size][/b][/color]
+# EMBED STREAMABLE VIDEO BBCODE v1.5
+
+[**By Dougiefresh**](http://www.simplemachines.org/community/index.php?action=profile;u=253913) -> [Link to Mod](http://custom.simplemachines.org/mods/index.php?mod=4138)
+
+--------
+
+## Introduction
 This modification adds a BBCode to view Streamable.com videos and pictures.
 
 The BBCode takes these forms:
-[code]
-[streamable]{streamable URL}[/streamable]
-[streamable width=x height=x]{streamable URL}[/streamable]
-[/code]
-where [b]{streamable URL}[/b] is like [b]http://streamable.com/e/8l7dn[/b].
+    
+    [streamable]{streamable URL}[/streamable]
+    [streamable width=x height=x]{streamable URL}[/streamable]
+    
+where **{streamable URL}** is like **http://streamable.com/e/8l7dn**.
 
-[color=blue][b][size=12pt][u]Admin Settings[/u][/size][/b][/color]
-There are two new settings on the [b]Modifications Settings[/b] page:
-o Streamable default width
-o Streamable default height
+## Admin Settings
+There are two new settings on the **Modifications Settings** page:
 
-[color=blue][b][size=12pt][u]Compatibility Notes[/u][/size][/b][/color]
+- Streamable default width
+- Streamable default height
+
+## Compatibility Notes
 This mod was tested on SMF 2.0.13, but should work on SMF 2.1 Beta 2, as well as SMF 2.0 and up.  SMF 1.x is not and will not be supported.
 
-This mod should be installed after [url=https://www.tapatalk.com/download_SimpleMachines.php]Tapatalk mod[/url], if you want to use it with Tapatalk.
+This mod should be installed after [Tapatalk mod](https://www.tapatalk.com/download_SimpleMachines.php), if you want to use it with Tapatalk.
 
-[color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
-The changelog can be viewed at [url=http://www.xptsp.com/board/free-modifications/embed-streamable-bbcode/]XPtsp.com[/url].
+## Changelog
+The changelog can be viewed at [XPtsp.com](http://www.xptsp.com/board/free-modifications/embed-streamable-bbcode/).
 
-[color=blue][b][size=12pt][u]License[/u][/size][/b][/color]
+## License
 Copyright (c) 2017 - 2018, Douglas Orend
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
