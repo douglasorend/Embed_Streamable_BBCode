@@ -81,7 +81,7 @@ function BBCode_Streamable_Validate(&$tag, &$data, &$disabled)
 	if (empty($height) && !empty($modSettings['streamable_default_height']))
 		$height = $modSettings['streamable_default_height'];
 	$tag['content'] = '<div style="' . (empty($width) ? '' : 'max-width: ' . $width . 'px;') . (empty($height) ? '' : 'max-height: ' . $height . 'px;') . '"><div class="streamable-wrapper">' .
-		'<iframe src="https://streamable.com/e/' . $data .'" scrolling="no" frameborder="' . $frameborder . '"></iframe></div></div>';
+		'<iframe src="https://streamable.com/e/' . $data .'" scrolling="no" frameborder="' . $frameborder . '" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
 }
 
 function BBCode_Streamable_LoadTheme()
